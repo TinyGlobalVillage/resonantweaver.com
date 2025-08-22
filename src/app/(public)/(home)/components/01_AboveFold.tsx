@@ -79,7 +79,7 @@ export default function AboveFold() {
           Embody your cosmic design.
         </p>
 
-        <Button href="#" role="button">Learn More</Button>
+        <Button href="/#02_JustBelowFold" role="button">Learn More</Button>
         <Button href="#" role="button">Book a Reading</Button>
       </ContentWrapper>
     </HeroSection>

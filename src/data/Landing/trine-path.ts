@@ -10,36 +10,39 @@ export type Section = {
 export const sections: Section[] = [
   {
     id: 1,
-    label: 'Axis Ignition: Remembering the pillar',
+    label: 'Axis Ignition: Remember the Core',
     content: [
-      ' ',
+      'Stillness. Rooting into the body, breath, and the present. A place of deep stillness where external motion is released. ',
+      'Ignite the vertical axis, stabilize your field. Circulate your energy and align into your core. ',
+      'Tune your signal antenna.'
     ],
-    link: '/axis',
+    link: '#',
     image: '/images/TrineGlyph.jpg',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Explore',
   },
   {
     id: 2,
-    label: 'The art of Moving Light',
+    label: 'The Art of Moving Light',
     content:[
-      'Awareness — the still point. Rooting into the body, breath, and the present. A place of deep stillness where external motion is released. ',
+      'Awareness — the vector. Become conscious of your energetic pathways, discover blocks or leaks. ',
+      'Explore your body witness that what is between and underneath. ',
       'Here, your field stabilizes, and you become a clear receiver. ',
-      'You can stay present in yourself while observing the external world. '],
-    link: '/awareness-training',
+      'You can stay present in yourself while observing the external world.'],
+    link: '#',
     image: '/images/TrineGlyph.jpg',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Explore',
   },
   {
     id: 3,
     label: 'Harmonic Weaving',
     content:[
       'Vectoring — the interface. The dynamic dance between form and field. ',
-      'Here you attune to subtle phase shifts, become a living signal, and interact with the wider energetic web in real-time. ',
+      'Attune to subtle phase shifts, become a living signal, and interact with the wider energetic web in real-time. ',
       'Reading your environment, reading your surroundings, reading what is true right now, all while holding a stable, coherent signal. ', 
-      'Holding awareness for the all of everything that always surrounds us. Remembering you are a part of the whole. '],
-    link: '/fvectoring',
+      'Holding awareness for the all of everything that always surrounds us. Remembering that you are a part of the whole. '],
+    link: '#',
     image: '/images/TrineGlyph.jpg',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Explore',
   },
 ];
 

@@ -23,7 +23,7 @@ When you’re ready to learn how to heal yourself.
 `,
     link: '/map',
     image: '/images/energybody.png',
-    buttonLabel: 'Reveal My Resonance',
+    buttonLabel: 'Explore',
   },
    {
     id: 2,

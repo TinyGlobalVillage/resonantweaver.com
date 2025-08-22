@@ -23,7 +23,7 @@ export const offeringsData = [
     title: 'HD Somatics',
     rippleColor: '#ffc051',
     description: [
-      'Gentle somatic movements aligned with your Human Design help your system recalibrate. Instead of forcing change, you remember who you are — body, breath, and soul in harmony.',
+      'Gentle somatic movements aligned with your Human Design help your system recalibrate. Instead of forcing change, you remember that you are body, breath, and soul in harmony.',
     ],
     image: '/images/bodyglyph.png',
     buttonLabel: 'Learn more',

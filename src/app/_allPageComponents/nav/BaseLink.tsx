@@ -22,7 +22,6 @@ const BaseLink = styled.a`
       border-radius: 50%;
       opacity: 0;
       transition: opacity 0.3s ease;
-      box-shadow: 0px 0px 70px 25px rgba(26, 44, 84,0.45);
     }
 
     &::before {
