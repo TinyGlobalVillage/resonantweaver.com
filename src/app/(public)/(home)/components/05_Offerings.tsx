@@ -5,7 +5,8 @@ import Card from '@/src/app/_allPageComponents/segments/SmallCard';
 import Paragraph from '@/src/app/_allPageComponents/content-types/Paragraph';
 import Button from '@/src/app/_allPageComponents/buttons/Button';
 import RippleEffect from '@/src/app/_allPageComponents/animations/RippleEffect';
-import SparkleEffect, { sparkleFloatKeyframes } from '@/src/app/_allPageComponents/animations/SparkleEffect';
+// import SparkleEffect, { sparkleFloatKeyframes } from '@/src/app/_allPageComponents/animations/SparkleEffect';
+import SparkleEffect from '@/src/app/_allPageComponents/animations/SparkleEffect';
 import { offeringsData } from '@/src/data/Landing/offerings';
 
 const sparkleFloat = keyframes`
@@ -46,7 +47,8 @@ const CardContainer = styled.div`
   }
 
   &:hover .sparkle {
-   animation-name: ${sparkleFloatKeyframes};
+  //  animation-name: was "sparkleFloatKeyframes"
+   animation-name: ${sparkleFloat};
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
