@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fliringscene.tinyglobalvillage.com/sitemap.xml
+Sitemap: https://resonantweaver.tinyglobalvillage.com/sitemap.xml

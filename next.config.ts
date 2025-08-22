@@ -1,11 +1,9 @@
-// import path from 'path';
-import { NextConfig } from 'next';
+import { withContentlayer } from 'next-contentlayer2';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  compiler: {
-    styledComponents: true, // ✅ Enables built-in SSR for styled-components
-  },
-  trailingSlash: true,
+  reactStrictMode: true,
+  compiler: { styledComponents: true },
 };
 
-export default nextConfig;
+export default withContentlayer(nextConfig);

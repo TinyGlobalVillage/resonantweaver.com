@@ -1,5 +1,5 @@
 // src/utils/getSocialIcon.ts
-import FacebookIcon from '@/app/[lang]/_allPageComponents/facebook/FacebookIcon';
+import FacebookIcon from '@/app/_allPageComponents/facebook/FacebookIcon';
 // import other icons...
 
 

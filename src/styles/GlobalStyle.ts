@@ -1,53 +1,59 @@
-// src/styles/GlobalStyles.ts
+// GlobalStyle.ts
 'use client';
-
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-/* -----------------------------------------
-Reset & Box Sizing
------------------------------------------ */
-*, *::before, *::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+background: linear-gradient(
+  145deg,
+  rgba(3, 8, 6, 1) 0%,        /* Almost pure black-green */
+  rgba(10, 18, 17, 1) 40%,    /* Deep slate teal */
+  rgba(15, 12, 22, 1) 70%,    /* Subtle indigo-violet shadows */
+  rgba(2, 2, 4, 1) 100%       /* Black with spiritual depth */
+);
 }
 
-/* -----------------------------------------
-Base HTML & Body
------------------------------------------ */
-html, body, #__next {
-width: 100%;
-overflow-x: hidden;
-font-family: 'Josefin Sans', sans-serif;
-}
 
-/* -----------------------------------------
-Custom Font
------------------------------------------ */
-@font-face {
-font-family: 'Josefin Sans';
-src: url('/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
-font-weight: 100 700;
-font-style: normal;
-font-display: swap;
+  a{
+  color: #b78a77;
 }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #b78a77;
+    margin-top: -40px;
+    font-family: 'Garamond', serif;
+    text-shadow: 0 0 3px rgba(244, 195, 160, 0.2);
+  }
 
-/* -----------------------------------------
-Links & Buttons
------------------------------------------ */
-a {
-color: inherit;
-text-decoration: none;
-}
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #b78a77;
+  
+    border-bottom: 1px solid rgba(129, 161, 159, 0.4);
+    font-family: 'Garamond', serif;
+  }
 
-a, button {
-cursor: pointer;
-background: none;
-border: none;
-font: inherit;
-}
+  p {
+    color: #E8E5DA;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+  }
 
+  .statement {
+    font-size: 1.2rem;
+    color: #E8E5DA;
+    line-height: 1.3; 
+    font-family: 'Roboto', sans-serif;
+  }
 `;
 
 export default GlobalStyle;
