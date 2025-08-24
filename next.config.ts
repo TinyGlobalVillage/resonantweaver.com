@@ -9,6 +9,7 @@
 // export default withContentlayer(nextConfig);
 
 // import path from 'path';
+import { withContentlayer } from 'next-contentlayer2';
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -18,4 +19,4 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
 };
 
-export default nextConfig;
+export default withContentlayer(nextConfig);

@@ -34,7 +34,7 @@ export const dictionary: Dictionary = {
         'Clarity in vision. Warmth in presence. Momentum in creation.',
       images: [
         {
-          url: '/images/hero/resonant-weaver-hero.png',
+          url: '/images/Logo-WC-no_txt.png',
           alt: 'Resonant Weaver — toroidal field and woven light motif',
           width: 1200,
           height: 630,
@@ -86,7 +86,7 @@ export const dictionary: Dictionary = {
       description:
         'An approach rooted in presence, guided by structure, and carried by care.',
       images:
-        '/images/hero/resonant-weaver-hero.png',
+        '/images/Logo-WC-no_txt.png',
     },
     aboutAboveFold: {
       aboutTitle: 'About',
@@ -110,30 +110,30 @@ export const dictionary: Dictionary = {
    gallery: {
     meta: {
       title:
-        'Portfolio | Resonant Weaver — Selected works',
+        'Blog | Resonant Weaver — Selected works',
       description:
-        'A glimpse of projects where energy, embodiment, and design are woven together into clear experiences.',
+        'A dive into energy, embodiment, and design are woven together into clear experiences.',
       keywords: [
         'Resonant Weaver portfolio',
         'Energy Maps',
         'Somatic Toolkit',
         'Astrology Reports',
-        'Web Animation',
-        'Design Examples',
+        '',
+        '',
       ],
       ogTitle:
-        'Portfolio | Resonant Weaver — Work in form',
+        'Blog | Resonant Weaver',
       ogDescription:
-        'Snapshots of maps, practices, and designs created with resonance.',
+        'A collection of articles.',
     },
     twitter: {
       card: 'summary_large_image',
       title:
-        'Portfolio | Resonant Weaver — Selected works',
+        'Blog | Resonant Weaver — Selected works',
       description:
-        'From subtle maps to crafted interfaces — a few glimpses of the weave.',
+        'A dive into energy, embodiment, and design are woven together into clear experiences.',
       images:
-        '/images/hero/resonant-weaver-hero.png',
+        '/images/Logo-WC-no_txt.png',
     },
     galleryAboveFold: {
       sectionTitle: 'Portfolio',
@@ -178,7 +178,7 @@ export const dictionary: Dictionary = {
       description:
         'Resonance Mirrors, somatic practices, star-informed guidance, and steady support.',
       images:
-        '/images/hero/resonant-weaver-hero.png',
+        '/images/Logo-WC-no_txt.png',
     },
     showsAboveFold: {
       sectionTitle: 'Offerings',
@@ -188,7 +188,7 @@ export const dictionary: Dictionary = {
   contact: {
     meta: {
       title:
-        'Contact | Resonant Weaver — Begin the weave',
+        'Contact | Begin the weave',
       description:
         'Ready to explore your harmonic frequency or have an inquiry? Send a note and we’ll move forward with calm clarity.',
       keywords: [
@@ -210,11 +210,11 @@ export const dictionary: Dictionary = {
       description:
         'A short message is enough. The path will unfold from there.',
       images:
-        '/images/hero/resonant-weaver-hero.png',
+        '/images/Logo-WC-no_txt.png',
     },
     contentAboveFold: {
       form: {
-        title: 'Contact',
+        title: 'Begin the Weave',
         fields: {
           name: 'Name',
           email: 'Email',
@@ -222,11 +222,11 @@ export const dictionary: Dictionary = {
           topic: 'Topic',
           dropdown: {
             placeholder: '— select one —',
-            option1: 'Resonance Mirror (Read • Realign • Reclaim)',
-            option2: 'HD-Aligned Somatics',
-            option3: 'Astrology (Nodes / Chiron / Stars)',
-            option4: 'Harmonic Sweep',
-            option5: '',
+            option1: 'Resonance Mirror',
+            option2: 'Harmonic Sweep',
+            option3: 'HD Somatics',
+            option4: 'Astrology',
+            option5: 'Oracle Cards',
             option6: '',
             variableOption: 'Other',
           },
@@ -310,7 +310,7 @@ export const dictionary: Dictionary = {
         shows: {
           label: 'OFFERINGS',
           ariaLabel: 'View offerings',
-          href: '/services',
+          href: '#offerings',
         },
         about: {
           label: 'ABOUT',
@@ -318,13 +318,13 @@ export const dictionary: Dictionary = {
           href: '/about',
         },
         gallery: {
-          label: 'PORTFOLIO',
-          ariaLabel: 'View portfolio',
-          href: '/portfolio',
+          label: 'BLOG',
+          ariaLabel: 'View blog',
+          href: '/writings',
         },
         contact: {
           label: 'CONTACT',
-          ariaLabel: 'Get in contact',
+          ariaLabel: 'Get in touch',
           href: '/contact',
         },
       },

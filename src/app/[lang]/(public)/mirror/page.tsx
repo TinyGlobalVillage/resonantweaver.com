@@ -1,12 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { sectionsData } from '@/src/data/mirror/mirrorSpotlight';
+import { sectionsData } from '@/data/mirror/mirrorSpotlight';
 import { mapTxtImgSplit } from '../../../../data/mirror/mirrorTxtImgSplit';
-import { mapCTAContent } from '@/src/data/mirror/mirrorCTA';
-import TextImageSplit from '@/src/app/[lang]/_allPageComponents/segments/TextImageSplit';
-import SpotlightSection from '@/src/app/[lang]/_allPageComponents/segments/Spotlight';
-import CTA from '@/src/app/[lang]/_allPageComponents/segments/CTA';
+import { mapCTAContent } from '@/data/mirror/mirrorCTA';
+import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
+import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
+import CTA from '@/app/[lang]/_allPageComponents/segments/CTA';
 
 const PageWrapper = styled.div`
   margin: 0 auto;

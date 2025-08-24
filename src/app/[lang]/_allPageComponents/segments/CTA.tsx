@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import Button from '@/src/app/[lang]/_allPageComponents/buttons/Button';
+import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
 
 const CTAWrapper = styled.section`
   text-align: center;

@@ -1,9 +1,8 @@
 'use client';
 import styled from 'styled-components';
-import Logo from '../utils/Logo';
 import BaseLink from '../navigation/BaseLink';
 import NavBar from '../navigation/NavBar';
-import type { Dictionary } from '@/src/data/i18n/types';
+import type { Dictionary } from '@/data/i18n/types';
 
 const HeaderWrapper = styled.header`
   padding: 10px 2rem;

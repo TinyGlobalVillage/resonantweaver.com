@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
   // 6) send the mail
   try {
     const info = await transporter.sendMail({
-      from:     `"Fliring Scene Form Submissions" <${process.env.FROM_EMAIL}>`,
+      from:     `"Resonant Weaver Form Submissions" <${process.env.FROM_EMAIL}>`,
       to:       process.env.TO_EMAIL,
       replyTo:  cleanEmail,
       subject:  `Contact Form Submission: "${cleanTopic}"`,

@@ -1,11 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import { sectionsData } from '@/src/data/HDS/HDS-spotlight';
+import { sectionsData } from '@/data/HDS/HDS-spotlight';
 import { HDSIntro } from '../../../../data/HDS/HDS-TxtImgSplit';
-import { mapCTAContent } from '@/src/data/HDS/hdsCTA';
-import TextImageSplit from '@/src/app/[lang]/_allPageComponents/segments/TextImageSplit';
-import SpotlightSection from '@/src/app/[lang]/_allPageComponents/segments/Spotlight';
+import { mapCTAContent } from '@/data/HDS/hdsCTA';
+import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
+import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
 import CTA from '../../_allPageComponents/segments/CTA';
 
 

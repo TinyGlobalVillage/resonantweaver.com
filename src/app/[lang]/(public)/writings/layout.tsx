@@ -1,8 +1,7 @@
 // app/writings/layout.tsx
 'use client';
-
-import { allWritings } from 'contentlayer/generated';
-import WritingsSidebar from '@/src/app/[lang]/_allPageComponents/navigation/WritingsSidebar';
+import { allWritings } from '../../../../../.contentlayer/generated';
+import WritingsSidebar from '@/app/[lang]/_allPageComponents/navigation/WritingsSidebar';
 import styled from 'styled-components';
 
 const GlowScope = styled.div`

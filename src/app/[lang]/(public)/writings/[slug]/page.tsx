@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import { allWritings } from "contentlayer/generated";
-import ArticleProse from "@/src/app/[lang]/_allPageComponents/content-types/ArticleProse";
-import WritingContent from "@/src/app/[lang]/_allPageComponents/content-types//WritingContent";
+import { allWritings } from "../../../../../../.contentlayer/generated";
+import ArticleProse from "@/app/[lang]/_allPageComponents/content-types/ArticleProse";
+import WritingContent from "@/app/[lang]/_allPageComponents/content-types//WritingContent";
 
 export async function generateStaticParams() {
   return allWritings.map(p => ({ slug: p.slug }));

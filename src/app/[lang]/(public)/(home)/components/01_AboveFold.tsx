@@ -1,9 +1,9 @@
 'use client';
 import styled from 'styled-components';
-import Button from '@/src/app/[lang]/_allPageComponents/buttons/Button';
-import Logo from '@/src/app/[lang]/_allPageComponents/utils/Logo';
-import SparkleEffect from '@/src/app/[lang]/_allPageComponents/animations/SparkleEffect';
-import RippleEffect from '@/src/app/[lang]/_allPageComponents/animations/RippleEffect';
+import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
+import Logo from '@/app/[lang]/_allPageComponents/utils/Logo';
+import SparkleEffect from '@/app/[lang]/_allPageComponents/animations/SparkleEffect';
+import RippleEffect from '@/app/[lang]/_allPageComponents/animations/RippleEffect';
 import React from 'react';
 
 const HeroSection = styled.section`
@@ -77,8 +77,8 @@ export default function AboveFold({ className, ...rest }: AboveFoldProps) {
           Embody your cosmic design.
         </p>
 
-        <Button href="/#02_JustBelowFold" role="button">Learn More</Button>
-        <Button href="#" role="button">Book a Reading</Button>
+        <Button href="#below-fold" role="button">Learn More</Button>
+        <Button href="#offerings" role="button">Book a Reading</Button>
       </ContentWrapper>
     </HeroSection>
   );

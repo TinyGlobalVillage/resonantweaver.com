@@ -2,13 +2,12 @@
 
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
-import Card from '@/src/app/[lang]/_allPageComponents/segments/SmallCard';
-import Paragraph from '@/src/app/[lang]/_allPageComponents/content-types/Paragraph';
-import Button from '@/src/app/[lang]/_allPageComponents/buttons/Button';
-import RippleEffect from '@/src/app/[lang]/_allPageComponents/animations/RippleEffect';
-// import SparkleEffect, { sparkleFloatKeyframes } from '@/src/app/_allPageComponents/animations/SparkleEffect';
-import SparkleEffect from '@/src/app/[lang]/_allPageComponents/animations/SparkleEffect';
-import { offeringsData } from '@/src/data/landing/offerings';
+import Card from '@/app/[lang]/_allPageComponents/segments/SmallCard';
+import Paragraph from '@/app/[lang]/_allPageComponents/content-types/Paragraph';
+import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
+import RippleEffect from '@/app/[lang]/_allPageComponents/animations/RippleEffect';
+import SparkleEffect from '@/app/[lang]/_allPageComponents/animations/SparkleEffect';
+import { offeringsData } from '@/data/landing/offerings';
 
 const sparkleFloat = keyframes`
   0% { transform: translate(0, 0) scale(1); opacity: 0.6; }

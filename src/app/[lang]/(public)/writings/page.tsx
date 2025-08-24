@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allWritings } from "contentlayer/generated";
+import { allWritings } from '../../../../../.contentlayer/generated';
 
 export default function WritingsIndex() {
   const posts = [...allWritings].sort((a, b) =>

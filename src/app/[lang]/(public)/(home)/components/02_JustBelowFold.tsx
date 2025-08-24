@@ -1,14 +1,15 @@
-import TextImageSplit from '@/src/app/[lang]/_allPageComponents/segments/TextImageSplit';
-import SpotlightSection from '@/src/app/[lang]/_allPageComponents/segments/Spotlight';
-import { sectionsData } from '@/src/data/landing/landingSpotlight';
-import { mapTxtImgSplit } from '@/src/data/mirror/mirrorTxtImgSplit';
+import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
+import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
+import { sectionsData } from '@/data/landing/landingSpotlight';
+import { mapTxtImgSplit } from '@/data/mirror/mirrorTxtImgSplit';
 
-export default function JustBelowFold() {
+type JustBelowFoldProps = React.ComponentPropsWithoutRef<'div'>;
+
+export default function JustBelowFold({ className, ...rest }: JustBelowFoldProps) {
   return (
-    <>
+    <div className={className} {...rest}>
       <SpotlightSection sectionData={sectionsData[0]} />
       <TextImageSplit sectionData={mapTxtImgSplit[0]} />
-      {}
-    </>
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 // src/components/navigation/NavBar.styles.ts
 import styled from 'styled-components';
 import Link from 'next/link';
-import { media } from '@/src/styles/breakpoints';
+import { media } from '@/styles/breakpoints';
 
 /* ---------- Desktop + Mobile container ---------- */
 export const NavbarContainer = styled.nav<{ $scrolled: boolean }>`
@@ -36,7 +36,7 @@ export const NavbarContainer = styled.nav<{ $scrolled: boolean }>`
     background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0) 0%, 
-      rgba(10, 15, 20, 1) 30%
+      rgba(10, 15, 20, 1) 20%
       
     );
   }

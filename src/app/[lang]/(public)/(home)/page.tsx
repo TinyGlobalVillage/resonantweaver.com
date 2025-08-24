@@ -1,11 +1,11 @@
 'use client';
 
-import Hero from "@/src/app/[lang]/(public)/(home)/components/01_AboveFold";
-import InteractiveCircle from "@/src/app/[lang]/(public)/(home)/components/04_Path";
-import Offerings from "@/src/app/[lang]/(public)/(home)/components/05_Offerings";
-import UnderConstruction from '@/src/app/[lang]/_allPageComponents/animations/Construction';
-import JustBelowFold from '@/src/app/[lang]/(public)/(home)/components/02_JustBelowFold';
-import TextImageSplit from "@/src/app/[lang]/_allPageComponents/segments/TextImageSplit";
+import Hero from "@/app/[lang]/(public)/(home)/components/01_AboveFold";
+import InteractiveCircle from "@/app/[lang]/(public)/(home)/components/04_Path";
+import Offerings from "@/app/[lang]/(public)/(home)/components/05_Offerings";
+import UnderConstruction from '@/app/[lang]/_allPageComponents/animations/Construction';
+import JustBelowFold from '@/app/[lang]/(public)/(home)/components/02_JustBelowFold';
+import TextImageSplit from "@/app/[lang]/_allPageComponents/segments/TextImageSplit";
 import { prismSections } from "../../../../data/landing/prismTxtimgSplit";
 import LazyMount from "../../_allPageComponents/utils/LazyMount";
 
@@ -24,7 +24,7 @@ export default function HomePage({
   return (
     <>
       <Hero id="hero" />
-      <LazyMount><JustBelowFold/></LazyMount>
+      <LazyMount><JustBelowFold id="below-fold" /></LazyMount>
       <LazyMount><InteractiveCircle /></LazyMount>
       <LazyMount><Offerings id="offerings" /></LazyMount>
       <LazyMount><TextImageSplit sectionData={prismSections[0]} /></LazyMount>

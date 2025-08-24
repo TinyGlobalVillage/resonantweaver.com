@@ -1,7 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Paragraph from '@/src/app/[lang]/_allPageComponents/content-types/Paragraph';
+import Paragraph from '@/app/[lang]/_allPageComponents/content-types/Paragraph';
 
 const Wrapper = styled.section`
   margin: 8rem 0;

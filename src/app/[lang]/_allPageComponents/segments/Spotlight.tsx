@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import Paragraph from '@/src/app/[lang]/_allPageComponents/content-types/Paragraph';
+import Paragraph from '@/app/[lang]/_allPageComponents/content-types/Paragraph';
 
 type Props = {
   sectionData: {
