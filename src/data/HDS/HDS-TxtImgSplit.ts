@@ -21,12 +21,10 @@ Your routine is crafted using your Human Design type, open centers, channels, an
 
 What you receive: 
 A step-by-step PDF guide to support your daily practice and help you integrate these shifts into your life.
-
-Price: $44
 `,
     link: '/Book',
     image: '/images/bodyglyph.png',
-    buttonLabel: 'Get your routine',
+    buttonLabel: '',
   },
 
     {
@@ -40,9 +38,15 @@ If you are pregnant or menstruating, avoid forceful or rapid breathing technique
 Always listen to your body. If you feel pain, dizziness, or discomfort, stop immediately and rest.
 
 This routine is not a substitute for professional medical advice, diagnosis, or treatment.
+
+Example routine: 
+Grounding and Energy Activation: Jumping + Hip Circles, Shaking out hands and feet. 
+Sacral-Root Flow and Emotional Clearing: Breath of Fire, Full Body Shake. 
+Creative Embodiment and Expression: Speak your Thoughts, Expressive Hands, Spiral Walking.
+Nervous System Reset and Integration: Knee Sways, Hands on Belly + Slow Wave Breathing.
     `,
     link: '/Book',
-    image: '/images/SomaticEx.jpg',
+    image: '',
     buttonLabel: '',
   },
 ];
