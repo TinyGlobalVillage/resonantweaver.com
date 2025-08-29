@@ -2,9 +2,9 @@
 export const runtime = 'nodejs';
 
 import { NextResponse, NextRequest } from 'next/server';
-import { RateLimiterMemory }        from 'rate-limiter-flexible';
-import sanitize                     from 'sanitize-html';
-import nodemailer                   from 'nodemailer';
+import { RateLimiterMemory } from 'rate-limiter-flexible';
+import sanitize from 'sanitize-html';
+import nodemailer from 'nodemailer';
 
 const limiter = new RateLimiterMemory({ points: 5, duration: 60 });
 

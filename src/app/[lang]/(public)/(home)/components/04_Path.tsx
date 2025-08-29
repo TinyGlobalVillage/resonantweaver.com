@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Button from '../../../_allPageComponents/buttons/Button';
-import { sections, resetSection, Section } from '../../../../../data/landing/trine-path';
+import { sections, resetSection, Section } from '@/data/Landing/trine-path';
 
 function describeArc(
   x: number,

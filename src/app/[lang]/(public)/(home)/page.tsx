@@ -6,9 +6,8 @@ import Offerings from "./components/05_Offerings";
 import UnderConstruction from '../../_allPageComponents/animations/Construction';
 import JustBelowFold from './components/02_JustBelowFold';
 import TextImageSplit from "../../_allPageComponents/segments/TextImageSplit";
-import { prismSections } from "../../../../data/landing/prismTxtimgSplit";
+import { prismSections } from "@/data/Landing/prismTxtimgSplit";
 import LazyMount from "../../_allPageComponents/utils/LazyMount";
-
 
 interface HomePageProps {
   params: Promise<{ lang: string }>; // params is now a Promise

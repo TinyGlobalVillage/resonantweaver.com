@@ -8,7 +8,7 @@ import Paragraph from '../../../_allPageComponents/content-types/Paragraph';
 import Button from '../../../_allPageComponents/buttons/Button';
 import RippleEffect from '../../../_allPageComponents/animations/RippleEffect';
 import SparkleEffect from '../../../_allPageComponents/animations/SparkleEffect';
-import { offeringsData } from '../../../../../data/landing/offerings';
+import { offeringsData } from '@/data/Landing/offerings';
 
 const sparkleFloat = keyframes`
   0% { transform: translate(0, 0) scale(1); opacity: 0.6; }
