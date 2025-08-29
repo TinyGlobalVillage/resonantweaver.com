@@ -6,7 +6,7 @@ import Offerings from "./components/05_Offerings";
 import UnderConstruction from '../../_allPageComponents/animations/Construction';
 import JustBelowFold from './components/02_JustBelowFold';
 import TextImageSplit from "../../_allPageComponents/segments/TextImageSplit";
-import { prismSections } from "@/data/Landing/prismTxtimgSplit";
+import { textContent } from "@/data/Landing/prismTxtimgSplit";
 import LazyMount from "../../_allPageComponents/utils/LazyMount";
 
 interface HomePageProps {
@@ -26,7 +26,7 @@ export default function HomePage({
       <LazyMount><JustBelowFold id="below-fold" /></LazyMount>
       <LazyMount><InteractiveCircle /></LazyMount>
       <LazyMount><Offerings id="offerings" /></LazyMount>
-      <LazyMount><TextImageSplit sectionData={prismSections[0]} /></LazyMount>
+      <LazyMount><TextImageSplit sectionData={textContent[0]} /></LazyMount>
       <LazyMount><UnderConstruction /></LazyMount>
 
     </>

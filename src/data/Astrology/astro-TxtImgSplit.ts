@@ -8,7 +8,7 @@ export type Section = {
   buttonLink?: string;
 };
 
-export const astroIntro: Section[] = [
+export const textContent: Section[] = [
   {
     id: 1,
     label: 'Chiron Report',

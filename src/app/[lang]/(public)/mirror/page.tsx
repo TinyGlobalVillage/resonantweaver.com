@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import { sectionsData } from '@/data/mirror/mirrorSpotlight';
-import { mapTxtImgSplit } from '../../../../data/mirror/mirrorTxtImgSplit';
-import { mapCTAContent } from '@/data/mirror/mirrorCTA';
+import { sectionsData } from '@/data/Mirror/mirrorSpotlight';
+import { textContent } from '../../../../data/Mirror/mirrorTxtImgSplit';
+import { mapCTAContent } from '@/data/Mirror/mirrorCTA';
 import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
 import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
 import CTA from '@/app/[lang]/_allPageComponents/segments/CTA';
@@ -26,13 +26,13 @@ const BG = styled.div`
 export default function QuantumResonanceMap() {
   return (
     <PageWrapper>
-      <TextImageSplit sectionData={mapTxtImgSplit[0]} gradientDirection="normal" hideButton />
-      <TextImageSplit sectionData={mapTxtImgSplit[3]} gradientDirection="flipped" hideButton />
+      <TextImageSplit sectionData={textContent[0]} gradientDirection="normal" hideButton />
+      <TextImageSplit sectionData={textContent[3]} gradientDirection="flipped" hideButton />
 
       <SpotlightSection sectionData={sectionsData[0]} />
       <SpotlightSection sectionData={sectionsData[1]} />
 
-      <TextImageSplit sectionData={mapTxtImgSplit[2]} gradientDirection="normal" />
+      <TextImageSplit sectionData={textContent[2]} gradientDirection="normal" />
 
       <BG><CTA data={mapCTAContent} /></BG>
     </PageWrapper>

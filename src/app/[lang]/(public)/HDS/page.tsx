@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { sectionsData } from '@/data/HDS/HDS-spotlight';
-import { HDSIntro } from '../../../../data/HDS/HDS-TxtImgSplit';
+import { textContent } from '../../../../data/HDS/HDS-TxtImgSplit';
 import { mapCTAContent } from '@/data/HDS/hdsCTA';
 import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
 import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
@@ -17,8 +17,8 @@ export default function HDS() {
   return (
     <PageWrapper>   
       <SpotlightSection sectionData={sectionsData[0]} />
-<TextImageSplit sectionData={HDSIntro[0]} gradientDirection="normal" />
-<TextImageSplit sectionData={HDSIntro[1]} gradientDirection="flipped" reverse />
+<TextImageSplit sectionData={textContent[0]} gradientDirection="normal" />
+<TextImageSplit sectionData={textContent[1]} gradientDirection="flipped" reverse />
 <CTA data={mapCTAContent} />
     </PageWrapper>
   );

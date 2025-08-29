@@ -270,7 +270,7 @@ export const dictionary: Dictionary = {
       gallery: {
         label: 'BLOG',
         ariaLabel: 'View portfolio',
-        href: '/writings',
+        href: '/blog',
       },
       contact: {
         label: 'CONTACT',

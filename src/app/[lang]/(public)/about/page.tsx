@@ -1,8 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { sectionsData } from '../../../../data/Astrology/astro-spotlight'
-import { textContent } from '../../../../data/Astrology/astro-TxtImgSplit';
+import { sectionsData } from '../../../../data/About/about-spotlight'
+import { textContent } from '../../../../data/About/about-TxtImgSplit';
 import TextImageSplit from '../../_allPageComponents/segments/TextImageSplit';
 import SpotlightSection from '../../_allPageComponents/segments/Spotlight';
 
@@ -11,7 +11,7 @@ const PageWrapper = styled.div`
   color: #E8E5DA;
 `;
 
-export default function Astrology() {
+export default function About() {
   return (
     <PageWrapper>   
 <SpotlightSection sectionData={sectionsData[0]} />

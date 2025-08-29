@@ -5,4 +5,4 @@ import { dictionary as no } from '../data/i18n/no';
 
 export const getDictionary = async (
   lang: string
-): Promise<Dictionary> => lang === 'en' ? no : en;
+): Promise<Dictionary> => lang === 'en' ? en : no;

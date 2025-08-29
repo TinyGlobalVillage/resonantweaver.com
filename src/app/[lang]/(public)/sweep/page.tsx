@@ -1,12 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { sectionsData } from '../../../../data/sweep/sweepSpotlight'
-import { sweepIntro } from '../../../../data/sweep/sweepTxtImgSplit';
+import { sectionsData } from '../../../../data/Sweep/sweepSpotlight'
+import { textContent } from '../../../../data/Sweep/sweepTxtImgSplit';
 import TextImageSplit from '../../_allPageComponents/segments/TextImageSplit';
 import SpotlightSection from '../../_allPageComponents/segments/Spotlight';
-import CTA from '@/app/[lang]/_allPageComponents/segments/CTA';
-import { sweepCTAContent } from '@/data/sweep/sweepCTA';
+import CTA from '../../_allPageComponents/segments/CTA';
+import { sweepCTAContent } from '@/data/Sweep/sweepCTA';
 
 const PageWrapper = styled.div`
   margin: 0 auto;
@@ -26,7 +26,7 @@ export default function Astrology() {
   return (
     <PageWrapper>   
 <SpotlightSection sectionData={sectionsData[0]} />
-<TextImageSplit sectionData={sweepIntro[0]} gradientDirection="normal" />
+<TextImageSplit sectionData={textContent[0]} gradientDirection="normal" />
 <BG><CTA data={sweepCTAContent} /></BG>
     </PageWrapper>
   );

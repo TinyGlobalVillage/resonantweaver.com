@@ -1,9 +1,7 @@
 // src/app/[lang]/(public)/contact/page.tsx
 import AboveFoldContactPage from "./AboveFoldContactPage";
 import { getDictionary } from "@/data/i18n/getDictionary";
-
 import { buildPageMetadata } from '@/hook-utils/buildPageMetadata';
-
 import { LangParams } from '@/data/i18n/types';
 
 interface ContactPageProps {
