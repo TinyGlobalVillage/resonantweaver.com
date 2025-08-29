@@ -1,15 +1,4 @@
-// import { withContentlayer } from 'next-contentlayer2';
-// import type { NextConfig } from 'next';
-
-// const nextConfig: NextConfig = {
-//   reactStrictMode: true,
-//   compiler: { styledComponents: true },
-// };
-
-// export default withContentlayer(nextConfig);
-
 // import path from 'path';
-import { withContentlayer } from 'next-contentlayer2';
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -19,4 +8,4 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
 };
 
-export default withContentlayer(nextConfig);
+export default nextConfig;

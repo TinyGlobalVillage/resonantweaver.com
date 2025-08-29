@@ -8,18 +8,10 @@ import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSp
 import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
 import CTA from '../../_allPageComponents/segments/CTA';
 
-
-
 const PageWrapper = styled.div`
   margin: 0 auto;
   color: #E8E5DA;
 `;
-
-type SectionProps = {
-  title: string;
-  paragraphs?: string[];
-  list?: string[];
-};
 
 export default function HDS() {
   return (

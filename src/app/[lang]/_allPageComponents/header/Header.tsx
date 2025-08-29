@@ -1,6 +1,5 @@
 'use client';
 import styled from 'styled-components';
-import BaseLink from '../navigation/BaseLink';
 import NavBar from '../navigation/NavBar';
 import type { Dictionary } from '@/data/i18n/types';
 
@@ -16,10 +15,6 @@ const SiteTitle = styled.h1`
   padding-left: 30px;
   margin: 0;
   a { text-decoration: none; color: #e8e5da; }
-`;
-
-const TitleLink = styled(BaseLink)`
-  font-size: 1.7rem;
 `;
 
 type HeaderProps = {

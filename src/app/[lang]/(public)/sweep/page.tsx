@@ -13,13 +13,6 @@ const PageWrapper = styled.div`
   color: #E8E5DA;
 `;
 
-type SectionProps = {
-  title: string;
-  paragraphs?: string[];
-  list?: string[];
-  style: string;
-};
-
 const BG = styled.div`
   padding: 2rem 1rem;
   background: linear-gradient(

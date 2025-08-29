@@ -1,17 +1,20 @@
+
 import { useState } from 'react';
 import Link from 'next/link';
-import { scaleMap } from '../../../..//styles/scaleMap/_scaleMap';
-import useResponsiveResize from '../../../../hook-utils/useResponsiveResize';
-import { FooterSection, FooterGrid, Column, Form, Input, Button, List, StatusMessage, SignupHeader, IconLink, Trademark } from './FooterWrapper';
-import type { Dictionary } from '../../../../data/i18n/types';
-// import { getSocialIcon } from '../../../../hook-utils/getSocialIcon';
+import BaseLink from '../navigation/BaseLink';
+import { scaleMap } from '@/styles/scaleMap/_scaleMap';
+import useResponsiveResize from '@/hook-utils/useResponsiveResize';
+import { FooterSection, FooterGrid, Column, Form, Input, Button, List, StatusMessage, SignupHeader, Trademark } from './FooterWrapper';
+import type { Dictionary } from '@/data/i18n/types';
+//import { getSocialIcon } from '@/hook-utils/getSocialIcon';
 
 interface FooterProps {
   lang: string;
   dict: Dictionary['footer'];
 };
 
-export default function Footer({ lang , dict }: FooterProps) {
+
+export default function Footer({ lang, dict }: FooterProps) {
   const { currentBreakpoint } = useResponsiveResize();
   const { footerHeaderFontSize, footerButtonWidth, inputWidth } = scaleMap[currentBreakpoint];
 
@@ -29,6 +32,7 @@ export default function Footer({ lang , dict }: FooterProps) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
       });
+      // const data = await res.json();
       if (!res.ok) {
         if (res.status === 409) {
           setStatus('duplicate');
@@ -39,6 +43,8 @@ export default function Footer({ lang , dict }: FooterProps) {
         setStatus('success');
         setEmail('');
       }
+
+
     } catch {
       setStatus('error');
     }
@@ -51,51 +57,39 @@ export default function Footer({ lang , dict }: FooterProps) {
         <Column>
           <div>
             <SignupHeader id='newsletter-header' $fontSize={footerHeaderFontSize}>
-              {/* <h3>{dict.newsletter.title}</h3> */}
-              <h3>Newsletter</h3>
+              <h3>{dict.newsletter.title}</h3>
             </SignupHeader>
-            {/* <Form onSubmit={handleSubmit} aria-labelledby={dict.newsletter.formAriaLabelledBy}> */}
-            <Form onSubmit={handleSubmit} aria-labelledby="newsletter-header">
+            <Form onSubmit={handleSubmit} aria-labelledby={dict.newsletter.formAriaLabelledBy}>
               <Input
-                // name={dict.input.name}
-                // aria-label={dict.input.ariaLabel}
+                name={dict.input.name}
+                aria-label={dict.input.ariaLabel}
                 $inputWidth={inputWidth}
                 type="email"
-                // placeholder={dict.input.placeholder}
-                placeholder="Enter your email"
+                placeholder={dict.input.placeholder}
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
               />
               <Button type="submit" disabled={status === 'sending'} $buttonWidth={footerButtonWidth}>
-                {/* {status === 'sending' ? 'Sending…' : dict.newsletter.subscribe} */}
-                {status === 'sending' ? 'Sending…' : 'Subscribe'}
+                {status === 'sending' ? 'Sending…' : dict.newsletter.subscribe}
               </Button>
             </Form>
-            {/* {status === 'success' && (<StatusMessage variant='success' aria-live='polite'>{dict.statusMessage.success}</StatusMessage>)} */}
-            {status === 'success' && (<StatusMessage variant='success' aria-live='polite'>Success! 🎉</StatusMessage>)}
-            {/* {status === 'error' && (<StatusMessage variant='error' aria-live='polite'>{dict.statusMessage.error}</StatusMessage>)} */}
-            {status === 'error' && (<StatusMessage variant='error' aria-live='polite'>Something went wrong</StatusMessage>)}
-            {/* {status === 'duplicate' && (<StatusMessage variant='error' aria-live='polite'>{dict.statusMessage.duplicate}</StatusMessage>)} */}
-            {status === 'duplicate' && (<StatusMessage variant='error' aria-live='polite'>Already subscribed</StatusMessage>)}
+            {status === 'success' && (<StatusMessage variant='success' aria-live='polite'>{dict.statusMessage.success}</StatusMessage>)}
+            {status === 'error' && (<StatusMessage variant='error' aria-live='polite'>{dict.statusMessage.error}</StatusMessage>)}
+            {status === 'duplicate' && (<StatusMessage variant='error' aria-live='polite'>{dict.statusMessage.duplicate}</StatusMessage>)}
           </div>
         </Column>
 
         {/* 2️⃣ Quick Links */}
         <Column>
-          {/* <h3>{dict.linksColumn.title}</h3> */}
-          <h3>Quick Links</h3>
+          <h3>{dict.linksColumn.title}</h3>
           <List>
-            {/* <li><Link href={`/${lang}${dict.linksColumn.links.shows.href}`}>{dict.linksColumn.links.shows.label}</Link></li>
-            <li><Link href={`/${lang}${dict.linksColumn.links.about.href}`}>{dict.linksColumn.links.about.label}</Link></li>
-            <li><Link href={`/${lang}${dict.linksColumn.links.gallery.href}`}>{dict.linksColumn.links.gallery.label}</Link></li>
-            <li><Link href={`/${lang}${dict.linksColumn.links.contact.href}`}>{dict.linksColumn.links.contact.label}</Link></li> */}
-            <li><Link href={`/${lang}/shows`}>Offerings</Link></li>
-            <li><Link href={`/${lang}/about`}>Blog</Link></li>
-            <li><Link href={`/${lang}/gallery`}>About</Link></li>
-            <li><Link href={`/${lang}/contact`}>Contact</Link></li>
+            <li><BaseLink href={`/${lang}${dict.linksColumn.links.shows.href}`}>{dict.linksColumn.links.shows.label}</BaseLink></li>
+            <li><BaseLink href={`/${lang}${dict.linksColumn.links.about.href}`}>{dict.linksColumn.links.about.label}</BaseLink></li>
+            <li><BaseLink href={`/${lang}${dict.linksColumn.links.gallery.href}`}>{dict.linksColumn.links.gallery.label}</BaseLink></li>
+            {/* <li><BaseLink href={`/${lang}${dict.linksColumn.links.contact.href}`}>{dict.linksColumn.links.contact.label}</BaseLink></li> */}
           </List>
-          {/* {dict.socialMedia.map((link) => (
+        {/*   {dict.socialMedia.map((link) => (
             <IconLink
               key={link.platform}
               href={link.href}
@@ -110,24 +104,18 @@ export default function Footer({ lang , dict }: FooterProps) {
 
         {/* 3️⃣ Contact block */}
         <Column>
-          {/* <h3>{dict.contactColumn.title}</h3> */}
-          <h3>Contact</h3>
-          {/* <Link href={`/${lang}${dict.linksColumn.links.contact.href}`} passHref> */}
-          <Link href={`/${lang}/contact`} passHref>
-            {/* <Button $buttonWidth={footerButtonWidth} aria-label={dict.contactColumn.buttonAriaLabel}> */}
-            <Button $buttonWidth={footerButtonWidth} aria-label="Contact us">
-              {/* {dict.contactColumn.buttonTitle} */}
-              Get in Touch
+          <h3>{dict.contactColumn.title}</h3>
+          <Link href={`/${lang}${dict.linksColumn.links.contact.href}`} passHref>
+            <Button $buttonWidth={footerButtonWidth} aria-label={dict.contactColumn.buttonAriaLabel}>
+              {dict.contactColumn.buttonTitle}
             </Button>
           </Link>
         </Column>
       </FooterGrid>
 
-      {/* <p>{dict.trademark.title}</p> */}
-      <p>© 2025 Resonant Weaver</p>
+      <p>{dict.trademark.title}</p>
       <Trademark>
-        {/* {dict.advert.message}{' '} */}
-        Brought to you by{' '}
+        {dict.advert.message}{' '}
         <a
           href="https://tinyglobalvillage.com"
           target="_blank"

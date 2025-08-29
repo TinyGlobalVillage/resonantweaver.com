@@ -11,13 +11,6 @@ const PageWrapper = styled.div`
   color: #E8E5DA;
 `;
 
-type SectionProps = {
-  title: string;
-  paragraphs?: string[];
-  list?: string[];
-  style: string;
-};
-
 export default function Astrology() {
   return (
     <PageWrapper>   

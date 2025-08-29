@@ -6,13 +6,12 @@ import type { Dictionary } from '../../../../data/i18n/types';
 
 type NavLinkProps = {
   dict: Dictionary['navigation']['links'];
-  socialMedia: Dictionary['navigation']['socialMedia'];
   showHome?: boolean;
   lang: string;
-}
+};
 
-// ─── the NavLinks component ───────────────────────────────────────────────────
-export default function NavLinks({ dict, socialMedia, lang, showHome = true }: NavLinkProps) {
+// ─── NavLinks ────────────────────────────────────────────────────────────────
+export default function NavLinks({ dict, lang, showHome = true }: NavLinkProps) {
   // convert dict object to array for mapping
   const allNavLinks = Object.entries(dict).map(([key, link]) => ({
     ...link,
@@ -23,18 +22,19 @@ export default function NavLinks({ dict, socialMedia, lang, showHome = true }: N
     <>
       {/* Navigation Links */}
       {allNavLinks
-        .filter(link => showHome || link.key !== 'home')
+        .filter((link) => showHome || link.key !== 'home')
         .map(({ label, href, ariaLabel }) => (
           <NavItem
             key={href}
             href={`/${lang}${href}`}
-            aria-label={ariaLabel}>
+            aria-label={ariaLabel}
+          >
             {label}
           </NavItem>
         ))}
 
-      {/* Social Media Links */}
-      {socialMedia.map(({ platform, href, ariaLabel, label }) => (
+      {/* Social Media Links (disabled for now)
+      {socialMedia?.map(({ platform, href, ariaLabel, label }) => (
         <NavItem
           key={platform}
           as="a"
@@ -43,10 +43,10 @@ export default function NavLinks({ dict, socialMedia, lang, showHome = true }: N
           rel="noopener noreferrer"
           aria-label={ariaLabel}
         >
-          {/* {getSocialIcon(platform) ?? label} */}
-
+          {label}
         </NavItem>
       ))}
+      */}
     </>
   );
 }

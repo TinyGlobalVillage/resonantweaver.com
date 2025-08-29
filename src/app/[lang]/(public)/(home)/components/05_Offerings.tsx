@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
 import Card from '@/app/[lang]/_allPageComponents/segments/SmallCard';
@@ -47,8 +48,7 @@ const CardContainer = styled.div`
   }
 
   &:hover .sparkle {
-  //  animation-name: was "sparkleFloatKeyframes"
-   animation-name: ${sparkleFloat};
+  animation-name: ${sparkleFloat};
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -111,8 +111,16 @@ export default function Offerings({ className, ...rest }: OfferingsProps) {
               {item.description.map((text, index) => (
                 <Paragraph key={index}>{text}</Paragraph>
               ))}
-              <Icon>
-                <img src={item.image} alt={item.title} />
+               <Icon>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={200}
+                  height={200}
+                  sizes="(max-width: 640px) 160px, 200px"
+                  style={{ width: '100%', height: 'auto' }}
+                  // priority // <-- uncomment if this is above the fold
+                />
               </Icon>
               <ButtonWrapper>
                 <Button href={item.link ?? '#'}>{item.buttonLabel}</Button>
