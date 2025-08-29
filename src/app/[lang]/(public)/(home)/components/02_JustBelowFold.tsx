@@ -1,7 +1,7 @@
-import TextImageSplit from '@/app/[lang]/_allPageComponents/segments/TextImageSplit';
-import SpotlightSection from '@/app/[lang]/_allPageComponents/segments/Spotlight';
-import { sectionsData } from '@/data/landing/landingSpotlight';
-import { mapTxtImgSplit } from '@/data/mirror/mirrorTxtImgSplit';
+import TextImageSplit from '../../../_allPageComponents/segments/TextImageSplit';
+import SpotlightSection from '../../../_allPageComponents/segments/Spotlight';
+import { sectionsData } from '../../../../../data/landing/landingSpotlight';
+import { mapTxtImgSplit } from '../../../../../data/mirror/mirrorTxtImgSplit';
 
 type JustBelowFoldProps = React.ComponentPropsWithoutRef<'div'>;
 

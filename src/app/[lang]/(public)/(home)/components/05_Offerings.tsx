@@ -3,12 +3,12 @@
 import Image from 'next/image';
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
-import Card from '@/app/[lang]/_allPageComponents/segments/SmallCard';
-import Paragraph from '@/app/[lang]/_allPageComponents/content-types/Paragraph';
-import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
-import RippleEffect from '@/app/[lang]/_allPageComponents/animations/RippleEffect';
-import SparkleEffect from '@/app/[lang]/_allPageComponents/animations/SparkleEffect';
-import { offeringsData } from '@/data/landing/offerings';
+import Card from '../../../_allPageComponents/segments/SmallCard';
+import Paragraph from '../../../_allPageComponents/content-types/Paragraph';
+import Button from '../../../_allPageComponents/buttons/Button';
+import RippleEffect from '../../../_allPageComponents/animations/RippleEffect';
+import SparkleEffect from '../../../_allPageComponents/animations/SparkleEffect';
+import { offeringsData } from '../../../../../data/landing/offerings';
 
 const sparkleFloat = keyframes`
   0% { transform: translate(0, 0) scale(1); opacity: 0.6; }

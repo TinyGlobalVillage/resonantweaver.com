@@ -1,11 +1,11 @@
 'use client';
 
-import Hero from "@/app/[lang]/(public)/(home)/components/01_AboveFold";
-import InteractiveCircle from "@/app/[lang]/(public)/(home)/components/04_Path";
-import Offerings from "@/app/[lang]/(public)/(home)/components/05_Offerings";
-import UnderConstruction from '@/app/[lang]/_allPageComponents/animations/Construction';
-import JustBelowFold from '@/app/[lang]/(public)/(home)/components/02_JustBelowFold';
-import TextImageSplit from "@/app/[lang]/_allPageComponents/segments/TextImageSplit";
+import Hero from "./components/01_AboveFold";
+import InteractiveCircle from "./components/04_Path";
+import Offerings from "./components/05_Offerings";
+import UnderConstruction from '../../_allPageComponents/animations/Construction';
+import JustBelowFold from './components/02_JustBelowFold';
+import TextImageSplit from "../../_allPageComponents/segments/TextImageSplit";
 import { prismSections } from "../../../../data/landing/prismTxtimgSplit";
 import LazyMount from "../../_allPageComponents/utils/LazyMount";
 

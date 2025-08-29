@@ -1,9 +1,9 @@
 'use client';
 import styled from 'styled-components';
-import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
-import Logo from '@/app/[lang]/_allPageComponents/utils/Logo';
-import SparkleEffect from '@/app/[lang]/_allPageComponents/animations/SparkleEffect';
-import RippleEffect from '@/app/[lang]/_allPageComponents/animations/RippleEffect';
+import Button from '../../../_allPageComponents/buttons/Button';
+import Logo from '../../../_allPageComponents/utils/Logo';
+import SparkleEffect from '../../../_allPageComponents/animations/SparkleEffect';
+import RippleEffect from '../../../_allPageComponents/animations/RippleEffect';
 import React from 'react';
 
 const HeroSection = styled.section`

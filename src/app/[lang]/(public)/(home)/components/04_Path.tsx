@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import Button from '@/app/[lang]/_allPageComponents/buttons/Button';
-import { sections, resetSection, Section } from '@/data/landing/trine-path';
+import Button from '../../../_allPageComponents/buttons/Button';
+import { sections, resetSection, Section } from '../../../../../data/landing/trine-path';
 
 function describeArc(
   x: number,
